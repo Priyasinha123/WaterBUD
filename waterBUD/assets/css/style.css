@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@300;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --blue: #37a0b7;
+    --purple: #485b9d;
+}
+/* .logo{
+    padding: 5px 0;
+} */
+/* @@@@@@@@@@@@@@@@@@@@ Navbar Start @@@@@@@@@@@@@@@@@@@@@@ */
+.navbar-toggler-icon{
+    color: #777;
+}
+.navbar{
+    /* border-radius: 50px; */
+    padding: 5px !important;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 6px;
+    width: 100%;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 5px 20px;
+    margin: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+.navbar ul li::after{
+    content: '';
+    background: var(--blue);
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0;
+    transition: top 0.5s, opacity 0.5s;
+}
+.navbar ul li a{
+    color: #fff;
+    transition: color 0.8s;
+}
+.navbar ul li a:hover{
+    color: var(--purple);
+}
+.navbar ul li:hover::after{
+    top: 50%;
+    opacity: 1;
+}
+.dropdown-menu{
+    background-color: var(--blue) !important;
+}
+/* @@@@@@@@@@@@@@@@@@@@ Navbar End @@@@@@@@@@@@@@@@@@@@@@ */
+
+/* @@@@@@@@@@@@@@@@@@@@ Footer Start @@@@@@@@@@@@@@@@@@@@@@@ */
+.footerSection{
+    background-color: #111;
+    padding: 40px;
+}
+.social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-right: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+.social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+}
+ul{
+    padding: 0 !important;
+}
+.footerSection h3{
+    color: #fff;
+}
+.footerSection p{
+    color: #fff;
+    font-size: 13px;
+    text-align: justify;
+}
+.footerSection ul li{
+    list-style: none;
+    padding-top: 5px;
+}
+.footerSection ul li a{
+    text-decoration: none;
+    color: var(--blue);
+    font-size: 14px;
+}
+.footerSection ul li .fa-solid{
+    color: #fff;
+}
+.footerSection h3{
+    padding: 15px 0;
+}
+/* footer link start */
+.footer-link{
+    /* padding: 20px 0; */
+    background-color: #111;
+  }
+  .footer-link p {
+    color: #fff;
+    font-size: 14px;
+  }
+  .footer-link a {
+    text-decoration: none;
+    color: #fff;
+  } 
+  
+  .footer-link a:hover{
+    color: #fff;
+  }
+  
+  .footer-link a span{
+    color: var(--red);
+  }
+/* footer link end */
+/* @@@@@@@@@@@@@@@@@@@@ Footer End @@@@@@@@@@@@@@@@@@@@@ */
+
+.ourProducts{
+    padding: 60px 0;
+}
+.ourProducts h5{
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.ourProducts h5::before{
+    content: '';
+    position:absolute;
+    background-color: var(--blue);
+    width: 8%;
+    height: 2px;
+    bottom: 20px;
+}
+.box{
+   /* min-height: 320px; */
+   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;   
+}
+.images{
+    position: relative;
+}
+.images .overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  .images:hover .overlay {
+    opacity: 1;
+  }
+.aboutWaterBUD{
+    /* background: url(../images/background.jfif);
+   background-repeat: no-repeat;
+   background-size: cover; */
+   background-color: #fbfbfb;
+   padding: 60px 0;
+
+}
+.aboutWaterBudRight{
+    background: url(../images/background2.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; 
+   padding: 55px;
+}
+.aboutContent h4{
+    padding: 20px 0;
+    letter-spacing: 3px;
+}
+.aboutContent p{
+    text-align: justify;
+    font-size: 14px;
+}
+.modernProduct{
+    padding: 60px 0;
+}
+.modernProduct h4{
+    color: var(--blue);
+    letter-spacing: 3px;
+}
+.modernProduct p{
+    text-align: justify;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ about us start@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+section001{
+    position: relative;
+    width: 100%;
+    padding: 50px;
+}
+.circle{
+    position: relative;
+    overflow: hidden; 
+}
+.circle img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.circle.circle1{
+    width: 500px;
+    height: 500px;
+    float: left;
+    border-radius: 50%;
+    margin: 20px;
+    shape-outside: circle();
+}
+.circle.circle2{
+    width: 300px;
+    height: 300px;
+    float: right;
+    border-radius: 50%;
+    margin: 20px;
+    shape-outside: circle();
+}
+section001 h2{
+    color: var(--blue);
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+section001 p{
+    color: #111;
+    font-size: 17px;
+    text-align: justify;
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ about us end @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ product section start @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+.productHeading{
+    padding: 60px 0;
+}
+.productHeading h6{
+    text-align: center;
+    padding-bottom: 30px;
+    letter-spacing: 3px;
+}
+.productHeading p{
+    text-align: justify;
+    letter-spacing: 1px;
+}
+
+/* Enquiry Button start */
+.model-btn-product{
+    padding: 8px 30px;
+    color: #fff;
+    background: var(--blue);
+    border: none;
+    outline: none;
+    font-size: 18px;
+    /* font-weight: bold; */
+    letter-spacing: 2px;
+    border-radius: 30px 0;
+}
+.modal-cont{
+    color: var(--blue);
+}
+.modal-para{
+    color: var(--blue);
+}
+.read-more-btn{
+    background: var(--blue);
+    color: #fff;
+    border: none;
+    padding: 10px 0;
+}
+/* Enquiry Button end */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ product section end @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ contact us start @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+.contact-form{
+    /* background: #fff; */
+    background: url(../images/background2.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 30px;
+}
+.contact-form h3{
+    /* color: #bc5e00; */
+    color: #000;
+}
+.contact-form input,
+.contact-form textarea{
+    background: transparent;
+    outline: none;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 2px solid var(--purple);
+    margin-bottom: 50px;
+}
+.contact-form input::placeholder,
+.contact-form textarea::placeholder{
+    font-size: 17px;
+    color: #000;
+}
+.contact-form .form-button{
+    /* background: #00bcd4; */
+    /* background-color: #bc5e00; */
+    background-color: var(--blue);
+    /* color: #fff; */
+    color: #000;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+}
+.enquiry-form button{
+    margin: 0;
+}
+.contact-form input:active{
+    outline-color: #fff;
+}
+.contactSection{
+    padding: 60px 0;
+}
+.contactSectionLeft{
+    background: url(../images/background.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: middle;
+    padding: 30px;
+}
+.contactSectionLeft ul li{
+    list-style: none;
+    padding: 13px;
+}
+.contactSectionLeft ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+}
+.contactSectionLeft p{
+    font-size: 15px;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ contact us end @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@ gallery start @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+.gallerySection{
+    padding: 60px 0;
+}
+.gallerySection h5{
+    letter-spacing: 2px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ gallery end @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+.phone{
+    position: fixed;
+    left: 0px;
+    bottom:20px;
+    z-index: 999;
+  
+  
+    /* background:blue; */
+    color: #fff;
+    padding: 10px;
+  }
+  .phone a i{
+    font-size: 23px;
+    color:#ffffff;
+    background-color:#00bcd4;
+    border-radius: 50px;
+    padding: 10px 10px;
+   
+}
+  .phone a i:hover{
+    color:#00bcd4;
+    background-color: #ffffff;
+
+  }
+
+@media screen and (max-width:500px) {
+    .ourProducts{
+        padding: 20px 0;
+    }
+    .aboutWaterBUD{
+        padding: 30px 0;
+    }
+    .aboutWaterBudRight{
+        padding: 20px;
+    }
+    .modernProduct{
+        padding:30px 0;
+    }
+    .circle.circle1{
+        width: 230px;
+        height: 230px;
+    }
+    .circle.circle2{
+        width: 180px;
+        height: 180px;
+    }
+    section001 p{
+        font-size: 14px;
+    }
+    .productHeading{
+        padding: 30px 0;
+    }
+    .productHeading p{
+        font-size: 13px;
+    }
+    .contactSection{
+        padding: 30px 0;
+    }
+    .contactSectionLeft{
+        padding: 20px;
+    }
+    .contactSectionLeft ul li a{
+        font-size: 13px;
+    }
+    .contactSectionLeft p{
+        font-size: 13px;
+    }
+    .navbar ul li{
+        padding: 5px 10px;
+    }
+    .gallerySection{
+        padding: 20px 0;
+    }
+    .gallerySection h5{
+        padding-bottom: 10px;
+    }
+}
